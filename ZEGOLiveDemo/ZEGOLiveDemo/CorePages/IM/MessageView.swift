@@ -70,7 +70,7 @@ class MessageView: UIView,UITableViewDataSource,UITableViewDelegate {
         if dataSource?.count == 0 {
             return
         }
-        self.layoutIfNeeded()
+        //self.layoutIfNeeded()
         let indexPath: IndexPath = IndexPath.init(row: dataSource!.count - 1, section: 0)
         messageTableView?.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.top, animated: true)
     }

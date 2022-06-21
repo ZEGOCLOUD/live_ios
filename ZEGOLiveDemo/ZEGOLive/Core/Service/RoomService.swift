@@ -106,7 +106,9 @@ class RoomService: NSObject {
     /// @param callback refers to the callback for join a room.
     func joinRoom(_ roomID: String, _ token: String, callback: RoomCallback?) {
         RoomManager.shared.resetRoomData()
-        ZIMManager.shared.zim?.joinRoom(roomID, callback: { fullRoomInfo, error in
+        var room = ZIMRoomInfo();
+        room.roomID = roomID;
+        ZIMManager.shared.zim?.enterRoom(room, config: nil, callback: { fullRoomInfo, error in
             if error.code != .success {
                 guard let callback = callback else { return }
                 if error.code == .roomModuleTheRoomDoseNotExist {
@@ -122,6 +124,7 @@ class RoomService: NSObject {
                 guard let callback = callback else { return }
                 switch result {
                 case .success():
+                    self.roomInfo.roomID = roomID
                     callback(.success(()))
                 case .failure(let error):
                     callback(.failure(error))
@@ -150,11 +153,6 @@ class RoomService: NSObject {
             guard let callback = callback else { return }
             callback(.failure(.failed))
             return
-        }
-        if role == .host {
-            RoomManager.shared.roomListService.endServerRoom(roomID, callback: nil)
-        } else {
-            RoomManager.shared.roomListService.leaveServerRoom(roomID, callback: nil)
         }
         
         ZIMManager.shared.zim?.leaveRoom(roomID, callback: { _, error in
@@ -214,8 +212,7 @@ extension RoomService {
         
         let roomInfo = RoomInfo()
         roomInfo.hostID = RoomManager.shared.userService.localUserInfo?.userID
-        roomInfo.roomID = roomID
-        roomInfo.roomName = roomName.count > 0 ? roomName : roomID
+        roomInfo.roomID = roomName.count > 0 ? roomName : roomID
         
         let config = ZIMRoomAdvancedConfig()
         let roomInfoJson = ZegoJsonTool.modelToJson(toString: roomInfo) ?? ""
@@ -238,8 +235,6 @@ extension RoomService: ZIMEventHandler {
         if state == .connected && event == .success {
             let newInRoom = roomInfo.hostID == nil
             if newInRoom { return }
-            // when reconnected must send a heart beat request.
-            RoomManager.shared.roomListService.heartBeatRequest()
             
             ZIMManager.shared.zim?.queryRoomAllAttributes(byRoomID: roomID, callback: { _, dict, error in
                 let hostLeft = error.code == .success && !dict.keys.contains("room_info")

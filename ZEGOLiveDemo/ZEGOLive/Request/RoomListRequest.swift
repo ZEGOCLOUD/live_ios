@@ -8,30 +8,31 @@
 import Foundation
 import UIKit
 
+
 struct RoomListRequest: Request {
-    var path = "/v1/room/get_room_list"
-    var method: HTTPMethod = .POST
+    var host = ""
+    var path = "/describe_room_list"
+    
+    var method: HTTPMethod = .GET
     typealias Response = RoomInfoList
     var parameter = Dictionary<String, AnyObject>()
     
     var pageNum = 100 {
         willSet {
-            parameter["page_num"] = newValue as AnyObject
+            parameter["PageSize"] = newValue as AnyObject
         }
     }
-    var from = "" {
+    var from = 1 {
         willSet {
-            parameter["form"] = newValue as AnyObject
+            parameter["PageIndex"] = newValue as AnyObject
         }
     }
-    var type = 0 {
-        willSet {
-            parameter["type"] = newValue as AnyObject
-        }
-    }
-    
     init() {
-        parameter["page_num"] = 100 as AnyObject
-        parameter["type"] = 0 as AnyObject
+        parameter["PageSize"] = 100 as AnyObject
+        parameter["PageIndex"] = 1 as AnyObject
+        parameter["host"] = host as AnyObject
+        assert(host.isEmpty==false, "you need set your room list host url, see https://github.com/ZEGOCLOUD/room_list_server_nodejs")
+        
+    
     }
 }

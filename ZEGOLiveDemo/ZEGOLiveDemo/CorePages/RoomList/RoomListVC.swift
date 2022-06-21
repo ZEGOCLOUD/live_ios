@@ -144,7 +144,6 @@ extension RoomListVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLa
                     switch result {
                     case .success:
                         self.joinLiveRoom()
-                        RoomManager.shared.roomListService.joinServerRoom(roomID, callback: nil)
                     case .failure(let error):
                         let message = String(format: ZGLocalizedString("toast_join_room_fail"), error.code)
                         TipView.showWarn(message)

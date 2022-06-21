@@ -19,72 +19,7 @@ struct RequestManager {
             }
         }
     }
-    
-    // create room
-    func createRoomRequest(request: CreateRoomRequest, success:@escaping(RequestStatus?)->(), failure:@escaping(_ requestStatus: RequestStatus?)->()){
-        NetworkManager.shareManage.send(request){ requestStatus in
-            if (requestStatus?.code == 0) {
-                success(requestStatus)
-            } else {
-                failure(requestStatus)
-            }
-        }
-    }
-    
-    // end room
-    func endRoomRequest(request: EndRoomRequest, success:@escaping(RequestStatus?)->(), failure:@escaping(_ requestStatus: RequestStatus?)->()){
-        NetworkManager.shareManage.send(request){ requestStatus in
-            if (requestStatus?.code == 0) {
-                success(requestStatus)
-            } else {
-                failure(requestStatus)
-            }
-        }
-    }
-    
-    // join room
-    func joinRoomRequest(request: JoinRoomRequest, success:@escaping(RequestStatus?)->(), failure:@escaping(_ requestStatus: RequestStatus?)->()){
-        NetworkManager.shareManage.send(request){ requestStatus in
-            if (requestStatus?.code == 0) {
-                success(requestStatus)
-            } else {
-                failure(requestStatus)
-            }
-        }
-    }
-    
-    // leave room
-    func leaveRoomRequest(request: LeaveRoomRequest, success:@escaping(RequestStatus?)->(), failure:@escaping(_ requestStatus: RequestStatus?)->()){
-        NetworkManager.shareManage.send(request){ requestStatus in
-            if (requestStatus?.code == 0) {
-                success(requestStatus)
-            } else {
-                failure(requestStatus)
-            }
-        }
-    }
-    
-    // heart beat
-    func heartBeatRequest(request: HeartBeatRequest, success:@escaping(RequestStatus?)->(), failure:@escaping(_ requestStatus: RequestStatus?)->()){
-        NetworkManager.shareManage.send(request){ requestStatus in
-            if (requestStatus?.code == 0) {
-                success(requestStatus)
-            } else {
-                failure(requestStatus)
-            }
-        }
-    }
-    
-    // get effects license
-    func getEffectsLicense(request: EffectsLicenseRequest, success:@escaping(RequestStatus?)->(), failure:@escaping(_ requestStatus: RequestStatus?)->()){
-        NetworkManager.shareManage.send(request){ requestStatus in
-            if (requestStatus?.code == 0) {
-                success(requestStatus)
-            } else {
-                failure(requestStatus)
-            }
-        }
-    }
+
 }
 
 

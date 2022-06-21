@@ -13,14 +13,9 @@ struct RequestStatus {
     var data = Dictionary<String, AnyObject>()
     
     init(json: Dictionary<String, Any>) {
-        code = json["code"] as? Int ?? 0
-        message = json["message"] as? String ?? ""
-        
-        if let dataDic = json["data"] as? Dictionary<String, AnyObject>  {
-            data = dataDic
-        } else if let dataDic = json["Data"] as? Dictionary<String, AnyObject> {
-            data = dataDic
-        }
+        code = json["Code"] as? Int ?? 0
+        message = json["Message"] as? String ?? ""
+        data = json["data"] as? Dictionary<String, AnyObject> ?? Dictionary<String, AnyObject>()
     }
 }
 

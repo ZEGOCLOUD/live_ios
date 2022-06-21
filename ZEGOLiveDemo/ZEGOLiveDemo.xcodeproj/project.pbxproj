@@ -18,7 +18,6 @@
 		864B3EEE277EEB0300699B69 /* MixedRingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864B3EEC277EEB0300699B69 /* MixedRingCell.xib */; };
 		8677D6C3277C44BE00612058 /* Room.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8677D6C0277C44BE00612058 /* Room.strings */; };
 		8677D6C5277C499400612058 /* FaceBeautifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8677D6C4277C499400612058 /* FaceBeautifyService.swift */; };
-		86938AC9277D61D3001DD575 /* EffectsLicenseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86938AC8277D61D3001DD575 /* EffectsLicenseRequest.swift */; };
 		86938ACD277DA10F001DD575 /* FaceBeautifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86938ACC277DA10F001DD575 /* FaceBeautifyView.swift */; };
 		86938ACF277DA122001DD575 /* FaceBeaytifyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86938ACE277DA122001DD575 /* FaceBeaytifyView.xib */; };
 		86938AD1277DA9AC001DD575 /* FaceBeautifyColletionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86938AD0277DA9AC001DD575 /* FaceBeautifyColletionViewCell.swift */; };
@@ -54,17 +53,12 @@
 		869F6D2827859E7B0018788E /* ParticipantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F6D2727859E7B0018788E /* ParticipantTableViewCell.swift */; };
 		869F6D2A27859EC10018788E /* ParticipantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 869F6D2927859EC10018788E /* ParticipantTableViewCell.xib */; };
 		869F6D2D2785A3710018788E /* String+Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F6D2C2785A3700018788E /* String+Head.swift */; };
-		869F6D2F2786CA330018788E /* JoinRoomRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F6D2E2786CA330018788E /* JoinRoomRequest.swift */; };
-		869F6D312786CA470018788E /* LeaveRoomRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F6D302786CA470018788E /* LeaveRoomRequest.swift */; };
 		86A8A1FC27796F56002A7658 /* RoomListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8A1FB27796F56002A7658 /* RoomListVC.swift */; };
 		86A8A2102779BC3C002A7658 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8A20D2779BC3C002A7658 /* NetworkManager.swift */; };
 		86A8A2112779BC3C002A7658 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8A20E2779BC3C002A7658 /* Request.swift */; };
 		86A8A2142779BCE6002A7658 /* RequestMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8A2132779BCE6002A7658 /* RequestMananger.swift */; };
 		86A8A2162779BE02002A7658 /* RoomListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8A2152779BE02002A7658 /* RoomListRequest.swift */; };
 		86A8A2182779C76A002A7658 /* RoomInfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8A2172779C76A002A7658 /* RoomInfoList.swift */; };
-		86A8A21A2779EA11002A7658 /* CreateRoomRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8A2192779EA11002A7658 /* CreateRoomRequest.swift */; };
-		86A8A21C2779EA21002A7658 /* EndRoomRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8A21B2779EA21002A7658 /* EndRoomRequest.swift */; };
-		86A8A21E2779EA34002A7658 /* HeartBeatRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8A21D2779EA34002A7658 /* HeartBeatRequest.swift */; };
 		86A8A2202779EBB0002A7658 /* RequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8A21F2779EBB0002A7658 /* RequestStatus.swift */; };
 		86A8A223277B38E6002A7658 /* RoomListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8A222277B38E6002A7658 /* RoomListViewCell.swift */; };
 		86B6DF912787E4FD0023A898 /* MoreSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B6DF902787E4FD0023A898 /* MoreSettingView.swift */; };
@@ -167,7 +161,6 @@
 		8677D6C1277C44BE00612058 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Room.strings"; sourceTree = "<group>"; };
 		8677D6C2277C44BE00612058 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Room.strings; sourceTree = "<group>"; };
 		8677D6C4277C499400612058 /* FaceBeautifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBeautifyService.swift; sourceTree = "<group>"; };
-		86938AC8277D61D3001DD575 /* EffectsLicenseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsLicenseRequest.swift; sourceTree = "<group>"; };
 		86938ACC277DA10F001DD575 /* FaceBeautifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBeautifyView.swift; sourceTree = "<group>"; };
 		86938ACE277DA122001DD575 /* FaceBeaytifyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceBeaytifyView.xib; sourceTree = "<group>"; };
 		86938AD0277DA9AC001DD575 /* FaceBeautifyColletionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBeautifyColletionViewCell.swift; sourceTree = "<group>"; };
@@ -249,17 +242,12 @@
 		869F6D2727859E7B0018788E /* ParticipantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantTableViewCell.swift; sourceTree = "<group>"; };
 		869F6D2927859EC10018788E /* ParticipantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParticipantTableViewCell.xib; sourceTree = "<group>"; };
 		869F6D2C2785A3700018788E /* String+Head.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Head.swift"; sourceTree = "<group>"; };
-		869F6D2E2786CA330018788E /* JoinRoomRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinRoomRequest.swift; sourceTree = "<group>"; };
-		869F6D302786CA470018788E /* LeaveRoomRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveRoomRequest.swift; sourceTree = "<group>"; };
 		86A8A1FB27796F56002A7658 /* RoomListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListVC.swift; sourceTree = "<group>"; };
 		86A8A20D2779BC3C002A7658 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		86A8A20E2779BC3C002A7658 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		86A8A2132779BCE6002A7658 /* RequestMananger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMananger.swift; sourceTree = "<group>"; };
 		86A8A2152779BE02002A7658 /* RoomListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListRequest.swift; sourceTree = "<group>"; };
 		86A8A2172779C76A002A7658 /* RoomInfoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomInfoList.swift; sourceTree = "<group>"; };
-		86A8A2192779EA11002A7658 /* CreateRoomRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomRequest.swift; sourceTree = "<group>"; };
-		86A8A21B2779EA21002A7658 /* EndRoomRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndRoomRequest.swift; sourceTree = "<group>"; };
-		86A8A21D2779EA34002A7658 /* HeartBeatRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartBeatRequest.swift; sourceTree = "<group>"; };
 		86A8A21F2779EBB0002A7658 /* RequestStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestStatus.swift; sourceTree = "<group>"; };
 		86A8A222277B38E6002A7658 /* RoomListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewCell.swift; sourceTree = "<group>"; };
 		86B6DF902787E4FD0023A898 /* MoreSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSettingView.swift; sourceTree = "<group>"; };
@@ -645,12 +633,6 @@
 			children = (
 				86A8A2132779BCE6002A7658 /* RequestMananger.swift */,
 				86A8A2152779BE02002A7658 /* RoomListRequest.swift */,
-				86A8A2192779EA11002A7658 /* CreateRoomRequest.swift */,
-				86A8A21B2779EA21002A7658 /* EndRoomRequest.swift */,
-				869F6D2E2786CA330018788E /* JoinRoomRequest.swift */,
-				869F6D302786CA470018788E /* LeaveRoomRequest.swift */,
-				86A8A21D2779EA34002A7658 /* HeartBeatRequest.swift */,
-				86938AC8277D61D3001DD575 /* EffectsLicenseRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1109,7 +1091,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				86938B372784772C001DD575 /* StringTool.swift in Sources */,
-				86A8A21A2779EA11002A7658 /* CreateRoomRequest.swift in Sources */,
 				8EE13EFD27745B810038AFCF /* ZegoJsonTool.swift in Sources */,
 				8EE13F2A277AEC450038AFCF /* AppDefine.swift in Sources */,
 				8EE13EF427745B810038AFCF /* TextMessage.swift in Sources */,
@@ -1149,7 +1130,6 @@
 				86B6DF962787E8280023A898 /* MoreCollectionViewCell.swift in Sources */,
 				869F6D2427859B360018788E /* ParticipantListView.swift in Sources */,
 				8EE13EFC27745B810038AFCF /* DictionaryArray.swift in Sources */,
-				86A8A21E2779EA34002A7658 /* HeartBeatRequest.swift in Sources */,
 				8EE13EF027745B810038AFCF /* Result+Zego.swift in Sources */,
 				8EA92347277C4BDB00D0BC2C /* LiveRoomVC+Bottom.swift in Sources */,
 				86938B3A2784772C001DD575 /* ZegoRTCServerAssistant.cpp in Sources */,
@@ -1157,7 +1137,6 @@
 				86938AE0278426CC001DD575 /* InputTextView.swift in Sources */,
 				8E6022572796A5A500062765 /* EffectBackgroundView.swift in Sources */,
 				8EE13F122775A5030038AFCF /* OperationCommand.swift in Sources */,
-				86A8A21C2779EA21002A7658 /* EndRoomRequest.swift in Sources */,
 				8EA9234D277C655300D0BC2C /* LiveRoomVC+Top.swift in Sources */,
 				8EE13EF827745B810038AFCF /* RoomManager.swift in Sources */,
 				8EE13E99277452A80038AFCF /* AppDelegate.swift in Sources */,
@@ -1166,7 +1145,6 @@
 				8E0F63B5277B19770070E750 /* LiveRoomVC.swift in Sources */,
 				860E11752786A873008847C4 /* DeviceService.swift in Sources */,
 				8EE13EF927745B810038AFCF /* MessageService.swift in Sources */,
-				869F6D312786CA470018788E /* LeaveRoomRequest.swift in Sources */,
 				864B3EE9277EEA9E00699B69 /* SoundChangeCell.swift in Sources */,
 				8E22443D2789868900B86C52 /* UserService+Util.swift in Sources */,
 				86A8A2162779BE02002A7658 /* RoomListRequest.swift in Sources */,
@@ -1179,7 +1157,6 @@
 				8EE13EF327745B810038AFCF /* UserInfo.swift in Sources */,
 				86A8A2182779C76A002A7658 /* RoomInfoList.swift in Sources */,
 				8E0F63BA277B40100070E750 /* LiveBottomView.swift in Sources */,
-				86938AC9277D61D3001DD575 /* EffectsLicenseRequest.swift in Sources */,
 				86938B392784772C001DD575 /* ZegoRTCServerAssistantImpl.cpp in Sources */,
 				86A8A2112779BC3C002A7658 /* Request.swift in Sources */,
 				86A8A2102779BC3C002A7658 /* NetworkManager.swift in Sources */,
@@ -1198,7 +1175,6 @@
 				8EA9234F277C656C00D0BC2C /* LiveRoomVC+Ready.swift in Sources */,
 				86938B3F2784772C001DD575 /* aes.cpp in Sources */,
 				8EE13F28277AEBE10038AFCF /* SettingCellModel.swift in Sources */,
-				869F6D2F2786CA330018788E /* JoinRoomRequest.swift in Sources */,
 				86BD9EC027856EC400DBE379 /* LiveSettingModel.swift in Sources */,
 				86938ACD277DA10F001DD575 /* FaceBeautifyView.swift in Sources */,
 				8EE13F00277461DB0038AFCF /* RoomListService.swift in Sources */,

@@ -62,18 +62,7 @@ extension LiveRoomVC : LiveReadyViewDelegate {
         
         HUDHelper.showNetworkLoading()
         
-        RoomManager.shared.roomListService.createRoom(roomName) { result in
-            switch result {
-            case .success(let roomInfo):
-                guard let roomID = roomInfo.roomID else { return }
-                guard let roomName = roomInfo.roomName else { return }
-                
-                self.createRTCRoomWith(roomID: roomID, roomName: roomName)
-            case .failure(let error):
-                let message = String(format: ZGLocalizedString("toast_create_room_fail"), error.code)
-                TipView.showWarn(message)
-            }
-        }
+        self.createRTCRoomWith(roomID: roomName, roomName: roomName)
     }
     
     func createRTCRoomWith(roomID: String, roomName: String) {
@@ -92,7 +81,6 @@ extension LiveRoomVC : LiveReadyViewDelegate {
                     switch result {
                     case .success():
                         self.isLiving = true
-                        self.joinServerRoom()
                         self.updateStartView()
                         self.updateTopView()
                         self.addLocalJoinMessage()
@@ -119,11 +107,5 @@ extension LiveRoomVC : LiveReadyViewDelegate {
         self.messageView.isHidden = false
         self.coHostCollectionView.isHidden = true
     }
-    
-    func joinServerRoom() {
-        if let roomID = RoomManager.shared.roomService.roomInfo.roomID {
-            RoomManager.shared.roomListService.joinServerRoom(roomID) { result in
-            }
-        }
-    }
+
 }
